@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Inter:wght@600&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #FFFFFF;
+}
+
+.pilares-secao {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pilares-titulo {
+    color: #000;
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.8px;
+    border-bottom: 5px solid #16BAC5;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+}
+
+.pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Usando seus valores de espaçamento horizontal e vertical */
+    gap: 170px 183px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pilar-card {
+    border: 1px solid #000;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.pilar-card img {
+    display: block;
+    margin: 0 auto;
+    /* Tamanho e espaçamento exatos do Figma */
+    width: 147px;
+    height: 147px;
+    margin-bottom: 38px;
+}
+
+.pilar-card h3 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.pilar-card p {
+    color: #000;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    margin: 0;
+}
