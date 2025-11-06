@@ -11,18 +11,23 @@ body{
     background-color: #104547;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
-    padding: 32px;
+    padding: 20px 32px;
 }
 
 .navbar a{
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    margin: 0 15px;
     font-size: 17px;
 }
 
-.logo{
-    font-size: 24px;
-    font-weight: bold;
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+.logo img{
+    width: auto;
+    height: 40px;
 }
