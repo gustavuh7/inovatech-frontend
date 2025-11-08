@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fale Conosco</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/js.js"></script>
+        
+    </head>
+    <body>
+        <div class="fale-conosco">
+            <h1>Fale Conosco</h1>
+            
+           <form method="POST" action="https://formsubmit.co/orcestraformulario@tuamaeaquelaursa.com" class="junção-box" onsubmit="return validarFormulario()">
+            <input type="hidden" name="_subject" value="Novo contato - Fale Conosco">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+                <div class="box">
+                    <div class="box-input">
+                        <label>Qual seu nome?<span class="required">*</span></label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </div>
+                    
+                    <div class="box-input">
+                        <label>Qual seu email?<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-input">
+                        <label>Qual seu telefone?<span class="required">*</span></label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                    </div>
+                    
+                    <div class="box-input">
+                        <label>Qual motivo do seu contato?<span class="required">*</span></label>
+                        <input type="text" id="motivo" name="motivo" placeholder="Motivo" required>
+                    </div>
+                </div>
+
+                <div class="box box-right">
+                    <div class="box-input">
+                        <label>Por onde nos encontrou?</label>
+                        <select id="encontrou" name="encontrou">
+                            <option value="" selected>...</option>
+                            <option value="google">Google</option>
+                            <option value="redes-sociais">Redes Sociais</option>
+                            <option value="indicacao">Indicação</option>
+                            <option value="anuncio">Anúncio</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="botao">Enviar</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>
