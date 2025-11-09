@@ -7,7 +7,7 @@
             const motivo = document.getElementById('motivo').value.trim();
            
 
-            const campos = [{ valor: nome, nome: 'Nome', elemento: document.getElementById('nome') },{ valor: email, nome: 'Email', elemento: document.getElementById('email') },{ valor: telefone, nome: 'Telefone', elemento: document.getElementById('telefone') },{ valor: motivo, nome: 'Motivo', elemento: document.getElementById('motivo') },];
+            const campos = [{ valor: nome, nome: 'Nome', elemento: document.getElementById('nome') },{ valor: email, nome: 'Email', elemento: document.getElementById('email') },{ valor: telefone, nome: 'Telefone', elemento: document.getElementById('telefone') },{ valor: motivo, nome: 'Motivo', elemento: document.getElementById('motivo')}];
 
             let camposVazios = [];
             let todosPreenchidos = true;
@@ -15,8 +15,8 @@
             campos.forEach(campo => {
                 if (!campo.valor) {
                     camposVazios.push(campo.nome);
-                    campo.elemento.style.borderColor = '#ff0000';
                     todosPreenchidos = false;
+                    campo.elemento.style.borderColor = '#ff0000';
                 } else {
                     campo.elemento.style.borderColor = '#16bac5';
                 }
@@ -33,7 +33,8 @@
                 alert('Por favor, preencha todos os campos obrigatórios:\n- ' + camposVazios.join('\n- '));
                 return false;
             }
-            
+
+            document.getElementById('formContato').submit();
             return true;
         }
 

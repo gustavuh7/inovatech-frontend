@@ -12,7 +12,7 @@
         <div class="fale-conosco">
             <h1>Fale Conosco</h1>
             
-           <form method="POST" action="https://formsubmit.co/orcestraformulario@tuamaeaquelaursa.com" class="junção-box" onsubmit="return validarFormulario()">
+          <form method="POST" action="https://formsubmit.co/orcestraformulario@tuamaeaquelaursa.com" class="junção-box" id="formContato" onsubmit="return validarFormulario(event)">
             <input type="hidden" name="_subject" value="Novo contato - Fale Conosco">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
@@ -52,7 +52,7 @@
                             <option value="outro">Outro</option>
                         </select>
                     </div>
-                    <button type="submit" class="botao">Enviar</button>
+                   <button type="button" class="botao" onclick="validarFormulario()">Enviar</button>
                 </div>
                 </form>
             </div>
