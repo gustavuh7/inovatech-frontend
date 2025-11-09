@@ -21,16 +21,11 @@ body {
     font-weight: 600;
     line-height: 28px;
     letter-spacing: -0.8px;
-    border-bottom: 5px solid #16BAC5;
-    display: inline-block;
-    padding-bottom: 8px;
-    margin-bottom: 40px;
 }
 
 .pilares-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Usando seus valores de espaçamento horizontal e vertical */
     gap: 170px 183px; 
     list-style: none;
     padding: 0;
@@ -48,7 +43,6 @@ body {
 .pilar-card img {
     display: block;
     margin: 0 auto;
-    /* Tamanho e espaçamento exatos do Figma */
     width: 147px;
     height: 147px;
     margin-bottom: 38px;
@@ -78,4 +72,37 @@ body {
     letter-spacing: 0.15px;
     text-align: center;
     margin: 0;
+}
+
+.pilares-linha {
+    width: auto; 
+    height: auto; 
+    margin-top: 5px; 
+    margin-bottom: 40px; 
+}
+
+@media (max-width: 900px) {
+    
+    .pilares-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 40px; 
+    }
+}
+
+@media (max-width: 600px) {
+
+    .pilares-secao {
+        padding: 0 15px; 
+    }
+    .pilares-grid {
+        grid-template-columns: 1fr;
+        gap: 40px 0; 
+    }
+    .pilares-titulo {
+        font-size: 30px; 
+    }
+    .pilar-card {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
