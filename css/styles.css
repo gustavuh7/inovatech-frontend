@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: #104547;
+}
+.container-principal{
+    width: 1440px;
+    height: 672px;
+    padding: 124px 68px;
+    margin: 0 auto;
+}
+.container-conteudo{
+    width: 1342px;
+    height: 424px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.container-texto{
+    width: 771px;
+    height: 320px;
+    background-color: #0f0326;
+    padding: 70px 116px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #d9d9d9;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.container-imagem{
+    width: 513px;
+    height: 384px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.container-imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1200px){
+.container-principal{
+    padding: 80px 40px;
+}
+
+.container-conteudo{
+    gap: 25px;
+}
+
+.container-texto{
+    padding: 50px 70px;
+}
+
+.texto{
+    font-size: 32px;
+}
+
+.container-imagem{
+    width: 400px;
+    height: 280px;
+}
+}
+@media (max-width: 900px){
+    .container-principal{
+        padding: 60px 30px;
+    }
+    .container-conteudo{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container-texto{
+        max-width: 100%;
+        padding: 40px 50px;
+    }
+
+    .texto{
+        font-size: 28px;
+    }
+
+    .container-imagem{
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+    }
+}
+@media (max-width: 600px){
+    .container-principal{
+        padding: 40px 20px;
+    }
+    .container-texto{
+        padding: 30px 25px;
+        border-radius: 15px;
+    }
+
+    .texto{
+        font-size: 22px;
+    }
+
+    .container-imagem{
+        height: 250px;
+        border-radius: 15px;
+    }
+}
+@media (max-width: 400px){
+    .container-principal{
+        padding: 30px 15px;
+    }
+
+    .container-texto{
+        padding: 25px 20px;
+    }
+
+    .texto{
+        font-size: 18px;
+    }
+
+    .container-imagem{
+        height: 200px;
+    }
+}
