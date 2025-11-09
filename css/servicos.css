@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body{
+    background-color:#d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.section-principal{
+    width: 1440px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.nossos-servicos{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}   
+
+.titulo{
+    font-size: 48px;
+    font-weight: 600;
+    color: #0F0326;
+    margin-bottom: 15px;
+}
+
+.linha{
+    width: 100%; 
+    max-width: 1300px;
+    height: 5px;
+    background-color: #16bac5;
+}
+
+.group{
+    width: 1393px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.container-servicos{
+    width: 363px;  
+    height: 257px;
+    background-color: #104547;
+    color: #d9d9d9;
+    padding: 25px;
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.img{
+    width: 137px;
+    height: 116px;
+    flex-shrink: 0;
+    aspect-ratio: 137/116;
+    justify-content: center;
+    margin-left: 90px;
+    border-radius: 19px;
+    margin-top: -5px;
+}
+
+
+
+
+.titulos{
+    text-align: center;
+    align-self: center;
+    font-size: 20px;
+    width: 355px;
+    height: 33px;
+}
+
+
+.servico-descricao{
+    width: 290px;
+    height: 44px;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+    text-align: center;
+    align-self: center;
+}
+
+
+@media (max-width: 1200px){
+.section-principal{
+    width: 100%;
+    padding: 30px 20px;
+}
+.group{
+    width: 100%;
+    justify-content:space-around;
+    gap: 20px; 
+} 
+.container-servicos{
+    width: 100%; 
+    height: auto; 
+    min-width: 280px; 
+    padding: 20px;
+}
+.titulos{
+    width: 100%;
+    height: 100%;
+}
+   
+.img{
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+@media (max-width: 768px){
+body{
+    min-height: initial; 
+    padding-bottom: 50px;
+}
+.group{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+}
+
+.titulos{
+    font-size: 2em;
+    text-align: center;
+}
+
+.linha{
+    width: 70%;
+}
+.container-servicos{
+    width: 90%; 
+    max-width: 400px; 
+    height: auto;
+    gap: 15px;
+}
+.img{
+    margin-left: auto;
+    margin-right: auto;
+}
+}
