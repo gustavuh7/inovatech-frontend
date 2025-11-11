@@ -21,8 +21,9 @@ body {
     padding: 20px 32px;
     /* Adicionado para evitar quebras estranhas */
     flex-wrap: wrap; 
-    position: fixed;
-    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Estilo do Logo */
