@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
 
+
+/* Navbar */
+
 html {
     scroll-behavior: smooth;
 }
@@ -103,7 +106,7 @@ body {
     }
 }
 
-
+/* Inicio */
 
 .tela {
 background-color: rgba(16, 69, 71, 0.9);
@@ -252,21 +255,7 @@ object-fit: cover;
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Quem somos */
 
 * {
     margin: 0;
@@ -465,7 +454,7 @@ object-fit: cover;
 
 
 
-
+/* Nossos Pilares */
 
 .pilares-secao {
     width: 100%;
@@ -566,18 +555,7 @@ object-fit: cover;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Nossos Serviços */
 
 .section-principal{
     width: 100%;
@@ -650,9 +628,6 @@ object-fit: cover;
     margin-top: -5px;
 }
 
-
-
-
 .titulos{
     text-align: center;
     align-self: center;
@@ -660,7 +635,6 @@ object-fit: cover;
     width: 355px;
     height: 33px;
 }
-
 
 .servico-descricao{
     width: 290px;
@@ -731,18 +705,7 @@ body{
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Fale Conosco */
 
 .fale-conosco {
 width: 100%;
@@ -845,8 +808,6 @@ width: 350px;
 width: 350px;
 }
 
-
-
 .botao {
 margin-top: 33px;
 width: 350px;
@@ -878,11 +839,7 @@ h1 {
 }
 }
 
-
-
-
-
-
+/* Rodapé */
 
 .rs {
     width: 100%;
