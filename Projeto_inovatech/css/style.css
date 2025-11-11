@@ -168,7 +168,9 @@ object-fit: cover;
 
 @media (max-width: 1200px) {
 .container-principal {
+    padding-top: 140px;
     padding: 80px 40px;
+    
 }
 
 .container-conteudo {
@@ -189,9 +191,10 @@ object-fit: cover;
 }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 .container-principal {
     padding: 60px 30px;
+    padding-top: 120px;
 }
 
 .container-conteudo {
@@ -218,6 +221,7 @@ object-fit: cover;
 @media (max-width: 600px) {
 .container-principal {
     padding: 40px 20px;
+    padding-top: 140px;
 }
 
 .container-texto {
@@ -238,6 +242,7 @@ object-fit: cover;
 @media (max-width: 400px) {
 .container-principal {
     padding: 30px 15px;
+    padding-top: 121px;
 }
 
 .container-texto {
@@ -313,7 +318,10 @@ object-fit: cover;
     margin-top: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
+    .block{
+        padding-top: 121px;
+    }
     .heading-title {
         font-size: 56px;
     }
@@ -324,9 +332,10 @@ object-fit: cover;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .block {
-        padding: 15px;
+        padding-top: 121px;
+        
     }
     
     .heading-title {
@@ -342,7 +351,11 @@ object-fit: cover;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+    .block {
+        padding-top: 121px;
+       
+    }
     .heading-title {
         font-size: 32px;
     }
@@ -433,7 +446,7 @@ object-fit: cover;
     font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .team-grid { grid-template-columns: 1fr; max-width: 720px; }
     .team-card {
         flex-direction: row;
@@ -443,7 +456,7 @@ object-fit: cover;
     .card-name { font-size: 15px; }
 }
 
-@media screen and (max-width: 480px) {
+@media(max-width: 480px) {
     .team-card { gap: 12px; }
     .avatar-col { width: 112px; height: 112px; flex: 0 0 112px; }
     .avatar-bg { width: 120px; height: 120px; border-width: 5px; }
@@ -675,6 +688,9 @@ object-fit: cover;
 }
 }
 @media (max-width: 768px){
+.section-principal{
+    padding-top: 121px; 
+}
 body{
     min-height: initial; 
     padding-bottom: 50px;
