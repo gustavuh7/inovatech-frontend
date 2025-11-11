@@ -19,22 +19,20 @@ body {
     align-items: center;
     margin: 0;
     padding: 20px 32px;
-    /* Adicionado para evitar quebras estranhas */
     flex-wrap: wrap; 
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Estilo do Logo */
+
 .logo img {
     width: auto;
     height: 40px;
 }
 
-/* Estilo dos Links (agora dentro do contêiner) */
+
 .navbar-links {
-    /* Em telas grandes, os links são mostrados em linha */
     display: flex; 
 }
 
@@ -43,7 +41,7 @@ body {
     text-decoration: none;
     margin: 0 15px;
     font-size: 17px;
-    display: block; /* Garante que o padding funcione bem */
+    display: block; 
     padding: 5px 0;
 }
 
@@ -51,10 +49,9 @@ body {
     border-bottom: 1px solid white;
 }
 
-/* --- Estilos do Botão Hamburger --- */
+
 
 .toggle-button {
-    /* Esconde o botão em telas grandes */
     display: none; 
     flex-direction: column;
     justify-content: space-around;
@@ -69,40 +66,33 @@ body {
     border-radius: 10px;
 }
 
-/* --- Media Query para Telas Pequenas (Mobile) --- */
+
 
 @media (max-width: 768px) {
     .navbar {
-        /* Faz o logo e o botão ficarem em lados opostos */
         flex-direction: row; 
         align-items: center;
     }
 
     .toggle-button {
-        /* Mostra o botão hambúrguer */
         display: flex;
     }
 
     .navbar-links {
-        /* Esconde os links por padrão no mobile */
         display: none;
-        /* Faz os links ocuparem a largura total */
         width: 100%;
         flex-direction: column;
         align-items: center;
-        /* Define a ordem (coloca os links abaixo do logo/botão) */
         order: 3; 
     }
 
     .navbar-links a {
-        /* Links empilhados */
         margin: 10px 0;
         text-align: center;
     }
 
-    /* Classe 'active' que será ativada via JavaScript */
+
     .navbar-links.active {
-        /* Mostra os links quando o menu está ativo */
         display: flex; 
     }
 }
