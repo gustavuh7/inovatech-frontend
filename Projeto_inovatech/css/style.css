@@ -100,61 +100,61 @@ body {
 /* Inicio */
 
 .tela {
-background-color: rgba(16, 69, 71, 0.9);
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
+    background-color: rgba(16, 69, 71, 0.9);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-principal {
-width: 100%;
-max-width: 1440px;
-padding: 124px 68px;
-margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    padding: 124px 68px;
+    margin: 0 auto;
 }
 
 .container-conteudo {
-width: 100%;
-max-width: 1342px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-gap: 35px;
+    width: 100%;
+    max-width: 1342px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
 }
 
 .container-texto {
-flex: 1;
-max-width: 771px;
-background-color: #0f0326;
-padding: 70px 116px;
-border-radius: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
+    flex: 1;
+    max-width: 771px;
+    background-color: #0f0326;
+    padding: 70px 116px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .texto {
-font-family: 'Jost', sans-serif;
-font-weight: 600;
-font-size: 40px;
-color: #d9d9d9;
-text-align: center;
-line-height: 1.3;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #d9d9d9;
+    text-align: center;
+    line-height: 1.3;
 }
 
 .container-imagem {
-width: 513px;
-height: 384px;
-border-radius: 40px;
-overflow: hidden;
-flex-shrink: 0;
+    width: 513px;
+    height: 384px;
+    border-radius: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 .container-imagem img {
-width: 100%;
-height: 100%;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -812,7 +812,7 @@ option {
     font-family: 'Jost', sans-serif;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
 .fale-conosco {
     width: 100%;
     height: auto;
@@ -999,7 +999,9 @@ h1 {
         width: 100%;
         text-align: left;
     }
-}.linha1 {
+}
+
+.linha1 {
     width: 100%; 
     height: 100%; 
     outline: 1px var(--Verdete, #16BAC5) solid; 
