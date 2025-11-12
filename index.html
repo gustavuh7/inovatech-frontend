@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inovatech</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
 <body>
 
@@ -17,6 +20,7 @@
             <a href="#Home">Home</a>
             <a href="#Sobre">Sobre</a>
             <a href="#Serviços">Serviços</a>
+            <a href="#Parceiros">Parceiros</a>
             <a href="#Contato">Contato</a>
         </div>
 
@@ -27,29 +31,30 @@
         </a>
     </header>
 
+    <!-- Home -->
 
-     <div class="tela" id="Home">
+    <div class="tela" id="Home">
         <div class="container-principal">
-        <div class="container-conteudo">
-            <div class="container-texto">
-                <p class="texto">A empresa focada em inovação por meio de desenvolvimento de softwares e consultorias.</p>
-            </div>
-            <div class="container-imagem">
-                <img src="./img/time inovatech.jpg" alt="time inovatech">
+            <div class="container-conteudo">
+                <div class="container-texto">
+                    <p class="texto">A empresa focada em inovação por meio de desenvolvimento de softwares e consultorias.</p>
+                </div>
+                <div class="container-imagem">
+                    <img src="./img/time inovatech.jpg" alt="time inovatech">
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
 
-
+    <!-- Quem Somos -->
 
     <div class="block" id="Sobre">
-    <div class="heading-title">Quem Somos?</div>
-    <div class="titulo">Conheça um pouco sobre nós</div>
-    <div class="content-wrapper">
-        <div class="hero-text">Na InovaTech, acreditamos que a tecnologia é a ponte entre o presente e o futuro</div>
-        </div>
+        <div class="heading-title">Quem Somos?</div>
+            <div class="titulo">Conheça um pouco sobre nós</div>
+                <div class="content-wrapper">
+                    <div class="hero-text">Na InovaTech, acreditamos que a tecnologia é a ponte entre o presente e o futuro</div>
+            </div>
 
         <section class="team-grid">
             <article class="team-card">
@@ -99,168 +104,217 @@
                     <p class="card-name">Luciana Santos Pires</p>
                 </div>
             </article>
-
       </section>
-  </div>
+    </div>
 
-  <section class="pilares-secao">
-        
-    <h2 class="pilares-titulo">Nossos Pilares</h2>
-	<div class="linha"></div>
+    <!-- Nossos Pilares -->
 
-        <ul class="pilares-grid">
+    <section class="pilares-secao">  
+        <h2 class="pilares-titulo">Nossos Pilares</h2>
+            <div class="linha"></div>
+                <ul class="pilares-grid">
+                    <li class="pilar-card">
+                        <img src="./img/11.png" alt="Ícone de soluções sob medida">
+                        <h3>1. Soluções sob medida</h3>
+                        <p>Cada projeto é desenvolvido de forma personalizada, considerando as reais necessidades e objetivos de cada cliente.</p>
+                    </li>
 
-            <li class="pilar-card">
-                <img src="./img/11.png" alt="Ícone de soluções sob medida">
-                <h3>1. Soluções sob medida</h3>
-                <p>Cada projeto é desenvolvido de forma personalizada, considerando as reais necessidades e objetivos de cada cliente.</p>
-            </li>
+                    <li class="pilar-card">
+                        <img src="./img/22.png" alt="Ícone de inovação contínua">
+                        <h3>2. Inovação contínua</h3>
+                        <p>Investimos constantemente em pesquisas, novas tecnologias e metodologias ágeis para oferecer soluções sempre atualizadas e eficientes.</p>
+                    </li>
 
-            <li class="pilar-card">
-                <img src="./img/22.png" alt="Ícone de inovação contínua">
-                <h3>2. Inovação contínua</h3>
-                <p>Investimos constantemente em pesquisas, novas tecnologias e metodologias ágeis para oferecer soluções sempre atualizadas e eficientes.</p>
-            </li>
+                    <li class="pilar-card">
+                        <img src="./img/33.png" alt="Ícone de equipe multidisciplinar">
+                        <h3>3. Equipe multidisciplinar</h3>
+                        <p>Contamos com profissionais experientes nas áreas de tecnologia, design, negócios e estratégia, garantindo uma visão completa em cada projeto.</p>
+                    </li>
 
-            <li class="pilar-card">
-                <img src="./img/33.png" alt="Ícone de equipe multidisciplinar">
-                <h3>3. Equipe multidisciplinar</h3>
-                <p>Contamos com profissionais experientes nas áreas de tecnologia, design, negócios e estratégia, garantindo uma visão completa em cada projeto.</p>
-            </li>
+                    <li class="pilar-card">
+                        <img src="./img/44.png" alt="Ícone de foco em resultados">
+                        <h3>4. Foco em resultados</h3>
+                        <p>Mais do que entregar tecnologia, entregamos valor — nosso compromisso é com a performance e o crescimento dos nossos clientes.</p>
+                    </li>
 
-            <li class="pilar-card">
-                <img src="./img/44.png" alt="Ícone de foco em resultados">
-                <h3>4. Foco em resultados</h3>
-                <p>Mais do que entregar tecnologia, entregamos valor — nosso compromisso é com a performance e o crescimento dos nossos clientes.</p>
-            </li>
+                    <li class="pilar-card">
+                        <img src="./img/55.png" alt="Ícone de atendimento próximo">
+                        <h3>5. Atendimento próximo</h3>
+                        <p>Mantemos uma comunicação transparente e direta, acompanhando o cliente em todas as etapas do processo.</p>
+                    </li>
 
-            <li class="pilar-card">
-                <img src="./img/55.png" alt="Ícone de atendimento próximo">
-                <h3>5. Atendimento próximo</h3>
-                <p>Mantemos uma comunicação transparente e direta, acompanhando o cliente em todas as etapas do processo.</p>
-            </li>
+                    <li class="pilar-card">
+                        <img src="./img/66.png" alt="Ícone de segurança e credibilidade">
+                        <h3>6. Segurança/credibilidade</h3>
+                        <p>Nossas soluções seguem rigorosos padrões de qualidade e segurança, garantindo a proteção de dados e a estabilidade das operações.</p>
+                    </li>
+                </ul> 
+    </section>
 
-            <li class="pilar-card">
-                <img src="./img/66.png" alt="Ícone de segurança e credibilidade">
-                <h3>6. Segurança/credibilidade</h3>
-                <p>Nossas soluções seguem rigorosos padrões de qualidade e segurança, garantindo a proteção de dados e a estabilidade das operações.</p>
-            </li>
+    <!-- Parceiros -->
 
-        </ul> </section>
+    <section class="os-parceiros" id="Parceiros">
+        <div class="container">
+            <h1>Nossos Parceiros</h1>
+            <div class="divider"></div>
 
+            <div class="partners-grid">
+                <div class="partner">
+                    <img src="img/unb_logo.png" alt="UNB" width="212" height="159">
+                </div>
+                <div class="partner">
+                    <img src="img/concentra_logo.png" alt="Concentra" width="200" height="200">
+                </div>
+                <div class="partner">
+                    <img src="img/orquestra_logo.png" alt="Orquestra" width="247" height="80">
+                </div>
+                <div class="partner">
+                    <img src="img/banco_alc_logo.png" alt="Banco ALC" width="210" height="210">
+                </div>
+                <div class="partner">
+                    <img src="img/devsab_logo.png" alt="DevsAB" width="206" height="206">
+                </div>
+            </div>
 
+            <div class="divider"></div>
+        </div>
+    </section>
 
-
-    
-
-
-
-
-
-
+    <!-- Nossos Serviços -->
 
 
     <section class="section-principal" id="Serviços">
-    <div class="nossos-servicos">
-        <h2 class="titulo">Nossos Serviços</h2>
-            <div class="linha"></div>
+            <div class="nossos-servicos">
+                <h2 class="titulo">Nossos Serviços</h2>
+                <div class="linha"></div>
+            </div>
+
+        <div class="group">
+                <div class="container-servicos">
+                    <img src="./img/planilha.jpeg" alt="imagem da planilha" class="img" />                    
+                        <h3 class="titulos">Planilhas interativas</h3>
+                            <p class="servico-descricao">Desenvolvimento de planilhas e dashboards interativos e inteligentes.</p>
+                </div>
+
+            <div class="container-servicos">
+                <img src="./img/chatbots.png" alt="imagem do chatbots" class="img" />
+                    <h3 class="titulos">Desenvolvimento de chatbots</h3>
+                        <p class="servico-descricao">Automação de funções de site ou apps com nossos chatbots.</p>
+            </div>
+
+            <div class="container-servicos">
+                <img src="./img/cybersegurança.png" alt="imagem de cybersegurança" class="img" />
+                    <h3 class="titulos">Consultorias de cybersegurança</h3>
+                        <p class="servico-descricao">Com nossa consultoria você garante a segurança de seus clientes.</p>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Fale Conosco -->
+
+    <div class="fale-conosco">
+        <h1>Fale Conosco</h1>
+            <form method="POST" class="junção-box" id="formContato">
+                <div class="box">
+                    <div class="box-input">
+                        <label>Qual seu nome?<span class="required">*</span></label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </div>
+                    
+                    <div class="box-input">
+                        <label>Qual seu email?<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-input">
+                        <label>Qual seu telefone?<span class="required">*</span></label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                    </div>
+                    
+                    <div class="box-input">
+                        <label>Qual motivo do seu contato?<span class="required">*</span></label>
+                        <input type="text" id="motivo" name="motivo" placeholder="Motivo" required>
+                    </div>
+                </div>
+
+                <div class="box box-right">
+                    <div class="box-input">
+                        <label>Por onde nos encontrou?</label>
+                        <select id="encontrou" name="encontrou">
+                            <option value="" selected>..</option>
+                            <option value="google">Google</option>
+                            <option value="redes-sociais">Redes Sociais</option>
+                            <option value="indicacao">Indicação</option>
+                            <option value="anuncio">Anúncio</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="botao">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <div class="group">
-        <div class="container-servicos">
-            <img src="./img/planilha.jpeg" alt="imagem da planilha" class="img" />                    
-                <h3 class="titulos">Planilhas interativas</h3>
-                    <p class="servico-descricao">Desenvolvimento de planilhas e dashboards interativos e inteligentes.</p>
-        </div>
-
-        <div class="container-servicos">
-            <img src="./img/chatbots.png" alt="imagem do chatbots" class="img" />
-                <h3 class="titulos">Desenvolvimento de chatbots</h3>
-                    <p class="servico-descricao">Automação de funções de site ou apps com nossos chatbots.</p>
-        </div>
-
-        <div class="container-servicos">
-            <img src="./img/cybersegurança.png" alt="imagem de cybersegurança" class="img" />
-                <h3 class="titulos">Consultorias de cybersegurança</h3>
-                    <p class="servico-descricao">Com nossa consultoria você garante a segurança de seus clientes.</p>
-        </div>
-    </div> 
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="fale-conosco">
-    <h1>Fale Conosco</h1>
+    <!-- Contatos -->
     
-    <form method="POST" action="https://formsubmit.co/orcestraformulario@tuamaeaquelaursa.com" class="junção-box" id="formContato" onsubmit="return validarFormulario(event)">
-    <input type="hidden" name="_subject" value="Novo contato - Fale Conosco">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-        <div class="box">
-            <div class="box-input">
-                <label>Qual seu nome?<span class="required">*</span></label>
-                <input type="text" id="nome" name="nome" placeholder="Nome" required>
-            </div>
-            
-            <div class="box-input">
-                <label>Qual seu email?<span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+<section class="os-contatos" id="Contato">
+        <div class="container">
+            <h1>Nossos contatos</h1>
+            <div class="divider"></div>
+
+            <div class="contacts-grid">
+                <a href="https://linkedin.com/company/inovatech" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="#0077B5">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <p class="label">LinkedIn</p>
+                        <p class="value">InovaTech</p>
+                    </div>
+                </a>
+
+                <a href="mailto:rh@inovatech.com.br" class="contact-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="#000">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <p class="label">Email</p>
+                        <p class="value">rh@inovatech.com.br</p>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/5561400288922" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <div class="icon">
+                        <img src="./img/whatsapp icon.png" alt="whatsapp">
+                    </div>
+                    <div class="text">
+                        <p class="label">WhatsApp</p>
+                        <p class="value">4002-8922</p>
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/inovatech" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <div class="icon">
+                        <img src="./img/instagram logo.png" alt="instagram">
+                    </div>
+                    <div class="text">
+                        <p class="label">Instagram</p>
+                        <p class="value">inovatech</p>
+                    </div>
+                </a>
             </div>
         </div>
-
-        <div class="box">
-            <div class="box-input">
-                <label>Qual seu telefone?<span class="required">*</span></label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
-            </div>
-            
-            <div class="box-input">
-                <label>Qual motivo do seu contato?<span class="required">*</span></label>
-                <input type="text" id="motivo" name="motivo" placeholder="Motivo" required>
-            </div>
-        </div>
-
-        <div class="box box-right">
-            <div class="box-input">
-                <label>Por onde nos encontrou?</label>
-                <select id="encontrou" name="encontrou">
-                    <option value="" selected>..</option>
-                    <option value="google">Google</option>
-                    <option value="redes-sociais">Redes Sociais</option>
-                    <option value="indicacao">Indicação</option>
-                    <option value="anuncio">Anúncio</option>
-                    <option value="outro">Outro</option>
-                </select>
-            </div>
-            <button type="button" class="botao" onclick="validarFormulario()">Enviar</button>
-        </div>
-        </form>
-    </div>
-</div>
+    </section>
 
 
 
-
-
-
-
-
-
+    <!-- Rodapé -->
 
 <div class="rs">
     <div class="footer-content">
@@ -273,7 +327,7 @@
 
             <div class="icons">
                 <div class="icon">
-                     <img class="icon-img--28" src="./img/linkedin logo.png" alt="linkedin" />
+                     <img class="icon-img--28" src="./img/instagram logo.png" alt="insta" />
                 </div>
 
                 <div class="icon icon--ghost">
@@ -281,8 +335,8 @@
                 </div>
 
                 <div class="icon">
-                    <img class="icon-img--32" src="./img/instagram logo.png" alt="insta" />
-                </div>
+                    <img class="icon-img--32" src="./img/linkedin logo.png" alt="linkedin" />
+                </div>  
 
                 <div class="icon">
                      <img class="icon-img--36" src="./img/face logo.png" alt="face" />
@@ -293,7 +347,7 @@
         <div class="right">
             <ul class="nav">
                 <li class="nav-item nav-servicos"><a href="#Serviços">Serviços</a></li>
-                <li class="nav-item nav-contatos"><a href="#Contatos">Contatos</a></li>
+                <li class="nav-item nav-contatos"><a href="#Contato">Contatos</a></li>
                 <li class="nav-item nav-quem"><a href="#Sobre">Quem Somos</a></li>
             </ul>
 
@@ -302,14 +356,6 @@
     </div>
     <div class="linha1"></div>
  </div>
-
-
-
-
-
-
-
-
 
     <script src="./js/script.js"></script>
 </body>
