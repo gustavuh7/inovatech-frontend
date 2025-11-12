@@ -15,42 +15,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+    emailjs.init("aA52K3lFSlt-dgsBW");
+
+    document.getElementById("formContato").addEventListener("submit", function(event) {
+    event.preventDefault();
 
 
-function validarFormulario() {
-const nome = document.getElementById('nome').value.trim();
-const email = document.getElementById('email').value.trim();
-const telefone = document.getElementById('telefone').value.trim();
-const motivo = document.getElementById('motivo').value.trim();
+    const botao = document.querySelector('.botao');
+    botao.disabled = true;
+    botao.textContent = 'Enviando...';
+    const formData = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        telefone: document.getElementById('telefone').value,
+        motivo: document.getElementById('motivo').value,
+        encontrou : document.getElementById('encontrou').value || 'Não informado',
+    };
+
+    const serviceID = "service_1tx565h";
+    const templateID = "template_9tl15nl";
+
+    emailjs.send(serviceID, templateID, formData)
+        .then(()=> {
+            alert('Mensagem enviada com sucesso!');
+            document.getElementById('formContato').reset();
+            botao.disabled = false;
+            botao.textContent = 'Enviar';
+            alert('Informações enviadas: \n' + 'Nome: '+ formData.nome + '\n' + 'Email: ' + formData.email + '\n' + 'Telefone: ' + formData.telefone + '\n' + 'Motivo: ' + formData.motivo + '\n' + 'Onde encontrou: ' + formData.encontrou);
+        })
+        .catch((error) => {
+            alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.', error);
+        })
+        .finally(() => {
+            botao.textContent = 'Enviar';
+        });
+    });
 
 
-const campos = [{ valor: nome, nome: 'Nome', elemento: document.getElementById('nome') },{ valor: email, nome: 'Email', elemento: document.getElementById('email') },{ valor: telefone, nome: 'Telefone', elemento: document.getElementById('telefone') },{ valor: motivo, nome: 'Motivo', elemento: document.getElementById('motivo')}];
-
-let camposVazios = [];
-let todosPreenchidos = true;
-
-campos.forEach(campo => {
-    if (!campo.valor) {
-        camposVazios.push(campo.nome);
-        todosPreenchidos = false;
-        campo.elemento.style.borderColor = '#ff0000';
-    } else {
-        campo.elemento.style.borderColor = '#16bac5';
-    }
-});
-
-if(!encontrou.value){
-    encontrou = 'Não informado';
-}else{
-    encontrou = document.getElementById('encontrou').value;
-}
-
-
-if (!todosPreenchidos) {
-    alert('Por favor, preencha todos os campos obrigatórios:\n- ' + camposVazios.join('\n- '));
-    return false;
-}
-
-document.getElementById('formContato').submit();
-return true;
-}
